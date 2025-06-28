@@ -1,15 +1,76 @@
-# CAV-Speed-Control-PID
-A minimal MATLAB example of speed control in a Connected and Automated Vehicle (CAV) using a PID controller. Simulates a vehicle as a double integrator and regulates its speed to a desired value. Designed for educational use and easy experimentation.
+# 🚗 CAV Speed Control using PID Controller
 
-## Introduction to PID controller
-A PID controller is a type of feedback control mechanism widely used in engineering systems to regulate processes.
+This repository demonstrates a simple **PID-based speed control** of a connected and automated vehicle (CAV) using **MATLAB**.
 
-PID stands for:
+---
 
-P: Proportional
+## 📘 Overview
 
-I: Integral
+This project serves as an **educational tutorial** on how a Proportional–Integral–Derivative (PID) controller can regulate the **longitudinal velocity** of a CAV modeled as a **double integrator** system.
 
-D: Derivative
+The vehicle aims to reach a **desired speed** from a given initial condition by computing the appropriate **acceleration command** using PID feedback.
 
-The controller takes in the error between a desired reference value and the actual system output and uses that to compute a control action.
+---
+
+## 📐 Mathematical Model
+
+The vehicle follows double integrator dynamics:
+
+\[
+\dot{x}(t) = v(t), \quad \dot{v}(t) = u(t)
+\]
+
+Where:
+- \( x(t) \): position  
+- \( v(t) \): speed  
+- \( u(t) \): acceleration (control input)
+
+The control objective is to drive the speed \( v(t) \) to a desired value \( v_{\text{ref}} \).
+
+The PID controller computes the control input:
+
+\[
+u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}
+\]
+
+with:
+- \( e(t) = v_{\text{ref}} - v(t) \)
+
+---
+
+## 🧪 MATLAB Simulation
+
+The file [`pid_speed_control.m`](./pid_speed_control.m) contains the full MATLAB script that:
+- Simulates the vehicle for 10 seconds
+- Applies PID control to reach target speed
+- Plots the speed and control signal (acceleration)
+
+### 🔧 Adjustable Parameters:
+- Desired speed: `v_ref`
+- PID gains: `Kp`, `Ki`, `Kd`
+- Time step and total duration
+
+---
+
+## 📊 Results
+
+The script generates two plots:
+- Vehicle **speed over time** converging to the desired value
+- The applied **acceleration (control input)** over time
+
+These plots help understand the behavior of each PID component and their combined effect.
+
+---
+
+## 🎓 Learning Objectives
+
+By studying this example, students will:
+- Understand the basic idea behind PID control
+- Learn how to implement a closed-loop speed controller
+- Explore the influence of each gain on the system response
+- Lay a foundation for more advanced topics in vehicle automation
+
+---
+
+## 📁 File Structure
+

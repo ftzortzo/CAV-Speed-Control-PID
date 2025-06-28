@@ -63,7 +63,7 @@ $u_D(t) = K_d \cdot \frac{d e(t)}{d t}$
 
 ## 🧪 MATLAB Simulation
 
-The file [`pid_speed_control.m`](./pid_speed_control.m) contains the full MATLAB script that:
+The file [`CAV_speed_control.m`](./CAV_speed_control.m) contains the full MATLAB script that:
 - Simulates the vehicle for 10 seconds
 - Applies PID control to reach target speed
 - Plots the speed and control signal (acceleration)

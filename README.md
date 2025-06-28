@@ -50,7 +50,7 @@ $u_P(t) = K_p \cdot e(t)$
 - Too high $K_i$ may lead to overshoot or instability
 
   
-  $u_I(t) = K_i \cdot \int_0^t e(\tau) \, d\tau$
+$u_I(t) = K_i \cdot \int_0^t e(\tau) \, d\tau$
 
 ### Derivative Term (D)
 

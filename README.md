@@ -85,15 +85,5 @@ These plots help understand the behavior of each PID component and their combine
 
 ---
 
-## 🎓 Learning Objectives
-
-By studying this example, students will:
-- Understand the basic idea behind PID control
-- Learn how to implement a closed-loop speed controller
-- Explore the influence of each gain on the system response
-- Lay a foundation for more advanced topics in vehicle automation
-
----
-
 ## 📁 File Structure
 

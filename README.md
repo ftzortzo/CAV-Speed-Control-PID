@@ -16,9 +16,7 @@ The vehicle aims to reach a **desired speed** from a given initial condition by 
 
 The vehicle follows double integrator dynamics:
 
-\[
-\dot{x}(t) = v(t), \quad \dot{v}(t) = u(t)
-\]
+$\dot{x}(t) = v(t), \quad \dot{v}(t) = u(t)$
 
 Where:
 - \( x(t) \): position  

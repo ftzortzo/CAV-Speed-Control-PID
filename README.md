@@ -85,5 +85,3 @@ These plots help understand the behavior of each PID component and their combine
 
 ---
 
-## 📁 File Structure
-

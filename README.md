@@ -19,20 +19,18 @@ The vehicle follows double integrator dynamics:
 $\dot{x}(t) = v(t), \quad \dot{v}(t) = u(t)$
 
 Where:
-- \( x(t) \): position  
-- \( v(t) \): speed  
-- \( u(t) \): acceleration (control input)
+- $x(t)$: position  
+- $v(t)$: speed  
+- $u(t)$: acceleration (control input)
 
-The control objective is to drive the speed \( v(t) \) to a desired value \( v_{\text{ref}} \).
+The control objective is to drive the speed $v(t)$ to a desired value $v_{\text{ref}}$.
 
 The PID controller computes the control input:
 
-\[
-u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}
-\]
+$u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}$
 
 with:
-- \( e(t) = v_{\text{ref}} - v(t) \)
+- $e(t) = v_{\text{ref}} - v(t)$
 
 ---
 

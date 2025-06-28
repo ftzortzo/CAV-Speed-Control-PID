@@ -35,24 +35,19 @@ with:
 ---
 
 ### Proportional Term (P)
-\begin{itemize}
-    \item Reacts to the present error
-    \item Large error $\rightarrow$ large correction
-    \item Too high $K_p$ may cause oscillations
-\end{itemize}
-\[
-u_P(t) = K_p \cdot e(t)
-\]
+
+-Reacts to the present error
+-Large error $\rightarrow$ large correction
+-Too high $K_p$ may cause oscillations
+
+
+$u_P(t) = K_p \cdot e(t)$
 
 ### Integral Term (I)
-\begin{itemize}
-    \item Reacts to accumulated past error
-    \item Eliminates steady-state error
-    \item Too high $K_i$ may lead to overshoot or instability
-\end{itemize}
-\[
-u_I(t) = K_i \cdot \int_0^t e(\tau) \, d\tau
-\]
+- Reacts to accumulated past error
+- Eliminates steady-state error
+- Too high $K_i$ may lead to overshoot or instability
+  $u_I(t) = K_i \cdot \int_0^t e(\tau) \, d\tau$
 
 ### Derivative Term (D)
 \begin{itemize}
